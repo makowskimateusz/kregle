@@ -6,9 +6,21 @@
 using namespace std;
 
 int main() {
-	Player player1;
-
 	srand(time(NULL));
+	Player player[4];
+
+
+	for (int i = 0; i < 4; i++) {
+		cout << "Poziom gracza #" << i+1 << " - " << player[i].chance_level << endl;
+	}
+	for (int i = 0; i < 10; i++) {
+		player[0].Throw(1);
+	}
+
+	
+	//player[2].Throw(3);
+	
+	/*srand(time(NULL));
 	int low, medium, high, chance;
 	int gracz[19];
 	for (int i = 1; i <= 20; i++) {
@@ -50,7 +62,7 @@ int main() {
 		
 		
 	}
-
+	*/
 
 	system("pause");
 	return 0;

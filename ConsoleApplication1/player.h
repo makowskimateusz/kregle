@@ -1,10 +1,10 @@
 #include <iostream>
 
-
 class Player {
 public:
 	Player();
-private:
-	int chance_level;
+	void Throw(int player);
 
+	int chance_level;
+	int frame[9][2];
 };
